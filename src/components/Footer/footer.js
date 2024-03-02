@@ -3,7 +3,7 @@ import './footer.css'
 
 function Footer() {
   return (
-    <footer className='footer'> Copyright symbol All right resercvevr</footer>
+    <footer className='footer'> Copyright symbol All right reserved</footer>
   )
 }
 

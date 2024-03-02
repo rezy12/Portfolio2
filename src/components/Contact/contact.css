@@ -55,6 +55,11 @@
     max-width: 60rem;
 }
 
+/*color language */
+.languageColor{
+    color: #ffff00;
+}
+
 .name, .email, .msg{
     font-size: medium;
     width: 100%;

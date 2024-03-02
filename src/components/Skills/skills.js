@@ -10,7 +10,8 @@ const Skills = () => {
 
         <section id="skills">
             <span className="skillTitle"> What I Do</span>
-            <span className="skillDesc"> I am a skill designer and more stuff here</span>
+            <span className="skillDesc"> As a passionate front-end developer, I specialize in turning ideas into captivating web experiences. I don't just code; I craft digital journeys. With a keen eye for design, I go beyond the ordinary to create visually stunning and user-friendly websites</span>
+            <span className="skillDesc"> My toolkit includes languages like <strong className="languageColor"> C++, JavaScript, HTML, CSS, and SQL</strong>, empowering me to breathe life into every pixel. From concept to execution, I thrive on bringing unique ideas to the digital realm. </span>
             <div className="skillBars">
                 
             <div className="skillBar">
@@ -33,7 +34,7 @@ const Skills = () => {
                     <img src= {AppDesign} alt="AppDesign" className="skillBarImg" />
                     <div className="skillBarText">
                         <h2>App Design</h2>
-                        <p>app designer driven by a passion creating seamless and impactful mobile experiences, a keen eye detail and a user-centric approach,  thrive on the challenge of making every tap and swipe a delight</p>
+                        <p>App designer driven by a passion creating seamless and impactful mobile experiences, a keen eye detail and a user-centric approach,  thrive on the challenge of making every tap and swipe a delight.</p>
                     </div>
                 </div>
             </div>
