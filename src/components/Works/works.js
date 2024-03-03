@@ -24,29 +24,99 @@ const Works = () => {
       <span className="worksDesc"></span>
 
       <div className="worksImgs">
-        {[
-          { src: Portfolio1, link: 'https://rezy12.github.io/Blisfullbites/' },
-          { src: Portfolio2, link: 'https://rezy12.github.io/Spicy-Cupz/' },
-          { src: Portfolio3, link: 'https://www.ummahtojannahinc.org/' },
-          { src: Portfolio4, link: 'https://rezy12.github.io/muslim_for_charity/' },
-          { src: Portfolio5, link: 'https://rezy12.github.io/PizzaSlice/' },
-          { src: Portfolio6, link: 'https://rezy12.github.io/Krust-Kraft/' },
-        ].map((project, index) => (
-          <a
-            key={index}
-            href={project.link}
-            className={`worksImgContainer ${hoveredIndex === index ? 'hovered' : ''}`}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-          >
-            <img src={project.src} alt={`Portfolio ${index + 1}`} className="worksImg" />
-            {hoveredIndex === index && (
-              <div className="imgOverlay">
-                <p>Description of Project {index + 1}</p>
-              </div>
-            )}
-          </a>
-        ))}
+        <a
+          href="https://rezy12.github.io/Blisfullbites/"
+          className={`worksImgContainer ${hoveredIndex === 0 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(0)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio1} alt="Portfolio 1" className="worksImg" />
+          {hoveredIndex === 0 && (
+            <div className="imgOverlay">
+              <p>Explore our website to discover the finest ice cream in town, featuring a delectable selection of sundaes and a variety of irresistible ice cream toppings.</p>
+            </div>
+          )}
+        </a>
+
+        <a
+          href="https://rezy12.github.io/Spicy-Cupz/"
+          className={`worksImgContainer ${hoveredIndex === 1 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio2} alt="Portfolio 2" className="worksImg" />
+          {hoveredIndex === 1 && (
+            <div className="imgOverlay">
+              <p>Indulge in our website showcasing sweet candies with a burst of sour goodness in every delightful bite.</p>
+            </div>
+          )}
+        </a>
+
+        <a
+          href="https://www.ummahtojannahinc.org/"
+          className={`worksImgContainer ${hoveredIndex === 1 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio3} alt="Portfolio 3" className="worksImg" />
+          {hoveredIndex === 1 && (
+            <div className="imgOverlay">
+              <p>Explore our fundraising website where I crafted the layout and design, customizing it for optimal presentation and impact.</p>
+            </div>
+          )}
+        </a>
+
+        <a
+          href="https://rezy12.github.io/muslim_for_charity/"
+          className={`worksImgContainer ${hoveredIndex === 1 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio4} alt="Portfolio 4" className="worksImg" />
+          {hoveredIndex === 1 && (
+            <div className="imgOverlay">
+              <p>Discover our website for Muslim charity, empowering users to seamlessly send money and make donations for meaningful causes.</p>
+            </div>
+          )}
+        </a>
+
+        <a
+          href="https://rezy12.github.io/PizzaSlice/"
+          className={`worksImgContainer ${hoveredIndex === 1 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio5} alt="Portfolio 5" className="worksImg" />
+          {hoveredIndex === 1 && (
+            <div className="imgOverlay">
+              <p>Indulge in our pizza slice haven, where we offer a delightful array of famous flavors at unbeatable prices. Explore the taste that suits your cravings!</p>
+            </div>
+          )}
+        </a>
+
+        <a
+          href="https://rezy12.github.io/Krust-Kraft/"
+          className={`worksImgContainer ${hoveredIndex === 1 ? 'hovered' : ''}`}
+          onMouseEnter={() => handleMouseEnter(1)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={Portfolio6} alt="Portfolio 6" className="worksImg" />
+          {hoveredIndex === 1 && (
+            <div className="imgOverlay">
+              <p>Embark on a global pizza journey with our exquisite selection, featuring the best flavors from around the world.</p>
+            </div>
+          )}
+        </a>
+
+        
+
+
+
+
+
+
+        {/* Repeat the above structure for each project */}
+
       </div>
 
       <button className="workBtn">See More</button>
